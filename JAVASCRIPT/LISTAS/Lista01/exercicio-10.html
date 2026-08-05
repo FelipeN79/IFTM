@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Exercício 10</title></head>
+<body>
+<script>
+  const x = parseInt(prompt('Informe um valor inteiro positivo maior que zero:'), 10);
+  const nome = prompt('Informe seu nome completo:') || '';
+  if (Number.isNaN(x) || x <= 0) {
+    alert('Informe um número inteiro positivo maior que zero.');
+  } else {
+    for (let i = 0; i < x; i++) document.write(nome + '<br>');
+  }
+</script>
+</body></html>

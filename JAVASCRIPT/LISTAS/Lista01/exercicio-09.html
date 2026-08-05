@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Exercício 9</title></head>
+<body>
+<script>
+  const expressao = prompt('Informe uma expressão matemática, por exemplo: ((5*8)-9)');
+  if (expressao !== null) {
+    try {
+      alert('Resultado: ' + eval(expressao));
+    } catch (erro) {
+      alert('Expressão inválida.');
+    }
+  }
+</script>
+</body></html>

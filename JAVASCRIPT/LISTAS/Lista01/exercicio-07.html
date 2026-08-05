@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Exercício 7</title></head>
+<body>
+<script>
+  function lerCor(componente) {
+    let valor;
+    do {
+      valor = parseInt(prompt('Informe o valor ' + componente + ' entre 0 e 255:'), 10);
+      if (Number.isNaN(valor) || valor < 0 || valor > 255) alert('Valor inválido. Digite um número de 0 a 255.');
+    } while (Number.isNaN(valor) || valor < 0 || valor > 255);
+    return valor;
+  }
+  const r = lerCor('vermelho (R)');
+  const g = lerCor('verde (G)');
+  const b = lerCor('azul (B)');
+  document.write('<p style="color: rgb(' + r + ', ' + g + ', ' + b + ');">Fundamentos de Web Design II</p>');
+</script>
+</body></html>

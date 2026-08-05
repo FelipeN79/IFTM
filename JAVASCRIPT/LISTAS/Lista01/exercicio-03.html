@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Exercício 3</title></head>
+<body>
+<script>
+  const nome = prompt('Informe seu nome completo:') || '';
+  const idade = parseInt(prompt('Informe sua idade:'), 10);
+  if (Number.isNaN(idade)) {
+    alert('Informe uma idade válida.');
+  } else if (idade >= 18) {
+    alert(nome + ', você já POSSUI idade para tirar carteira.');
+  } else {
+    const faltam = 18 - idade;
+    alert(nome + ', você ainda NÃO POSSUI idade para tirar carteira, ainda falta(m) ' + faltam + ' ano(s).');
+  }
+</script>
+</body></html>

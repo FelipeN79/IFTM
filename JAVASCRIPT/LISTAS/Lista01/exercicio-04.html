@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Exercício 4</title></head>
+<body>
+<script>
+  const nota1 = parseFloat(prompt('Informe a nota do 1º bimestre:'));
+  const nota2 = parseFloat(prompt('Informe a nota do 2º bimestre:'));
+  if (Number.isNaN(nota1) || Number.isNaN(nota2)) {
+    alert('Informe notas válidas.');
+  } else {
+    const total = nota1 + nota2;
+    if (total >= 60) {
+      alert('Aprovado! Total de pontos: ' + total.toFixed(1));
+    } else {
+      alert('Reprovado. Faltaram ' + (60 - total).toFixed(1) + ' ponto(s) para aprovação.');
+    }
+  }
+</script>
+</body></html>
